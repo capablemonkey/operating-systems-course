@@ -1,5 +1,6 @@
 ## Memory space for process
 
+```
  ______________
 |  stack       |
 |     |        |
@@ -20,6 +21,7 @@
 | code         |
 |(instructions)|
 |______________|
+```
 
 ## Process creation
 

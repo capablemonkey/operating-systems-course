@@ -21,13 +21,13 @@ Thread management operations:
 
 You can manage threads without kernel-mode instructions.  These are called user-level threads:
 
-- user threads are fast
-- can only use one core
-- one thread blocks all other threads
+- user threads are fast (no system call needed)
+- can only use one core, since all user threads are treated as a single kernel thread and are thus scheduled to one core
+- one user thread blocks all other user threads
 
 Kernel-level threads are managed by the OS.
 
-- slower
-- threads can be allocated to multiple cores
-- one thread does not block all other threads
+- slower (because you need system calls to create and manage them)
+- kernel threads can be allocated to multiple cores
+- one kernel thread does not block other threads
 
