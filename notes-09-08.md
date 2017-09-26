@@ -23,6 +23,10 @@
 |______________|
 ```
 
+Stack: static memory allocation
+
+Heap: dynamic memory allocation (malloc)
+
 ## Process creation
 
 `fork()` creates a new process.  It returns the pid of the newly created child process to the parent, while the child gets 0.  The child is a copy of the parent.  After the fork, the parent will keep running after the fork command, and the child will also resume execution from the forking point.
